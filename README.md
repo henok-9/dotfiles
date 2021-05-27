@@ -1,2 +1,2 @@
 # dotfiles
-Arch Linux dotfiles 
+Arch Linux dotfiles and configs
