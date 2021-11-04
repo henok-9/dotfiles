@@ -14,6 +14,7 @@ set noswapfile
 set undofile
 
 
+
 call plug#begin('~/.vim/plugged')
 " colorschemes
     Plug 'arcticicestudio/nord-vim'
@@ -32,11 +33,18 @@ call plug#begin('~/.vim/plugged')
 " file explorer
     Plug 'preservim/nerdtree'
 
+" status line 
+    Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+    Plug 'ryanoasis/vim-devicons' 
+
+" github copilot
+    Plug 'github/copilot.vim'
+
 call plug#end()
 
+"set background=dark 
+colorscheme nord
 
-set background=dark 
-colorscheme palenight 
 
 let mapleader = " "
 
@@ -51,6 +59,10 @@ let mapleader = " "
     nnoremap <C-n> :NERDTree<CR>
     nnoremap <C-t> :NERDTreeToggle<CR>
     nnoremap <C-f> :NERDTreeFind<CR>
+
+
+
+
 
 
 
