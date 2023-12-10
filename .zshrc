@@ -6,6 +6,8 @@ export ZSH="$HOME/.oh-my-zsh"
 
 #Java env
 export PATH=/usr/lib/jvm/default/bin/javac:$PATH
+export EDITOR=nvim
+
 
 ZSH_THEME="robbyrussell"
 DEFAULT_USER=`whoami`
