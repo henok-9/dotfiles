@@ -1,0 +1,7 @@
+include catppuccin-mocha
+set recolor "true"
+set recolor-keephue "true"
+
+set page-padding 10
+# set scroll-wrap "true"
+set statusbar-home-tilde "true"

@@ -1,0 +1,55 @@
+{
+    "window.zoomLevel": 3,
+
+
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  // "vim.smartRelativeLine": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<ESC>"],
+      "commands": [":nohl"]
+    },
+
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    },
+    {
+     "before": ["<S-l>"],
+     "after": ["$"]
+    },
+    {
+     "before": ["<S-h>"],
+     "after": ["^"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "editor.fontFamily": "'JetBrains Mono', 'Cascadia Code', Cascadia Code",
+  "window.menuBarVisibility": "toggle",
+  "files.autoSave": "afterDelay"
+}
