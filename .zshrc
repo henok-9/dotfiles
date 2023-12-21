@@ -2,8 +2,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 
 HISTSIZE=50000
 HISTFILESIZE=50000
@@ -20,7 +18,6 @@ export PATH="/var/lib/flatpak/exports/bin/com.spotify.Client:$PATH"
 #Java env
 ZSH_THEME="robbyrussell"
 DEFAULT_USER=`whoami`
-
 
 
 # Uncomment the following line to enable command auto-correction.
@@ -66,7 +63,6 @@ alias zconfig='~/.zshrc'
 alias logs='encfs ~/.xlogs ~/.mountlogs'
 alias dlog='fusermount -u ~/.mountlogs/' 
 alias bashrc='nn ~/.bashrc'
-alias webm='python3 /home/shifta/cringe/sus_webm.py'
 alias cat='bat'
 alias zz='sudo zypper install'
 alias yt='yt-dlp'
@@ -74,7 +70,6 @@ alias oom= 'sudo journalctl -u earlyoom | grep sending'
 alias weather="curl wttr.in"
 alias ears='bluetoothctl power on && bluetoothctl connect 30:53:C1:2C:BA:12' 
 alias deafen='bluetoothctl disconnect'
-alias take='nvim mytakeonthings.txt'
 alias hot='sudo nmcli dev wifi hotspot ifname wlp2s0 ssid hmm password "qwerty1234"'
 alias fact='wine ~/Factorio/bin/x64/factorio.exe'
 alias nconf='nn ~/.config/nvim/lua/koneh/plugins-setup.lua'
