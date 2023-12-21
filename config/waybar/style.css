@@ -8,7 +8,7 @@ window#waybar {
     /* background-color: rgba(43, 48, 59, 0.5); */
     background-color: transparent;
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: #ffffff;
+    color: #000000;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -46,7 +46,7 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -3px #000000;
 }
 
 #workspaces {
@@ -55,13 +55,12 @@ button:hover {
     /* padding-right: 50px; */
     border-radius: 10px;
     font-weight: bolder;
-    color: #000000;
+    color: #f40000;
     padding-left: 50px;
     padding-right: 50px;
     transition: none;
-    color: #f1c40f;
     
-    background: #c2c6ef;
+    background:transparent;
 }
 
 #workspaces button:hover {
@@ -72,6 +71,7 @@ button:hover {
     background-color: #86d3b8;
     /* box-shadow: inset 0 -3px #ffffff; */
     border-radius: 5px;
+    color: #000000;
 }
 
 #workspaces button.urgent {
@@ -106,7 +106,7 @@ button:hover {
 #window,
 #workspaces {
     margin: 0 4px;
-    color: #ffffff;
+    color: #97e1ad
 }
 
 /* If workspaces is the leftmost module, omit left margin */
