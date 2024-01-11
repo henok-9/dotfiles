@@ -3,11 +3,11 @@
      "position": "top", // Waybar position (top|bottom|left|right)
     "height": 26, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 0, // Gaps between modules (4px)
+    "spacing": 2, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["clock","hyprland/window","battery","hyprland/mode", "hyprland/scratchpad", "custom/media"],
+    "modules-left": ["battery","clock","hyprland/window","hyprland/mode", "hyprland/scratchpad", "custom/media"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["mpd", "idle_inhibitor", "cpu", "memory", "temperature", "backlight", "pulseaudio", "network", /*"keyboard-state",*/ /*"hyprland/language",*/   "tray"],
+    "modules-right": ["mpd", "idle_inhibitor" /*,"cpu"*/, "memory", "temperature", "backlight", "pulseaudio", "network", /*"keyboard-state",*/ /*"hyprland/language",*/   "tray"],
     // Modules configuration
         "hyprland/workspaces": {
             "disable-scroll": true,
