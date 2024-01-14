@@ -26,8 +26,25 @@
                  "9": "፱",
                  "10": "፲"
          },
+         "persistent-workspaces": {
+             "*": 5// 5 workspaces by default on every monitor
+       }
      },
      
+    "hyprland/window": {
+    "format": " {}",
+    "rewrite": {
+        "(.*) — Mozilla Firefox": "  $1",
+        "class<kitty>": "> ",
+        "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
+        "class<firefox>": "", // Windows whose classes are "firefox"
+        "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
+        "foot": "", 
+        "code": "󰨞"
+    },
+    "separate-outputs": true
+},
+
     "hyprland/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
