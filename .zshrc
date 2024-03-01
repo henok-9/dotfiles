@@ -3,6 +3,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 
+
 HISTSIZE=50000
 HISTFILESIZE=50000
 
@@ -14,7 +15,10 @@ export EDITOR=/usr/bin/nvim
 
 # Path to oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="/var/lib/flatpak/exports/bin/com.spotify.Client:$PATH"
+# export PATH="/var/lib/flatpak/exports/bin/com.spotify.Client:$PATH"
+
+# doom-emacs path 
+export PATH="$HOME/.config/emacs/bin:$PATH"
 #Java env
 ZSH_THEME="robbyrussell"
 DEFAULT_USER=`whoami`
@@ -23,19 +27,8 @@ DEFAULT_USER=`whoami`
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-# You can also set it to another string to have that shown instead of the default red dots.
-# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
-# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
 COMPLETION_WAITING_DOTS="true"
 
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
- # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
          z 
 
@@ -53,29 +46,28 @@ vi() {
 vim() {
   nvim "$@"
 }
+
 alias nn='nvim'
 alias r='ranger'
-alias dur="~/duration.sh"
+alias dur="~/.duration.sh"
 alias ...='cd ../..'
+alias zc='source ~/.zshrc'
+alias focus='mpv ~/focus.mp3'
 alias h='history'
-alias zconfig='~/.zshrc'
-
-alias logs='encfs ~/.xlogs ~/.mountlogs'
-alias dlog='fusermount -u ~/.mountlogs/' 
-alias bashrc='nn ~/.bashrc'
+alias zconfig='v ~/.zshrc'
+alias hc='nvim ~/.config/hypr/hyprland.conf'
+alias kc='nvim ~/.config/kitty/kitty.conf'
 alias cat='bat'
-alias zz='sudo zypper install'
 alias yt='yt-dlp'
 alias oom= 'sudo journalctl -u earlyoom | grep sending'
 alias weather="curl wttr.in"
-alias ears='bluetoothctl power on && bluetoothctl connect 30:53:C1:2C:BA:12' 
-alias deafen='bluetoothctl disconnect'
-alias hot='sudo nmcli dev wifi hotspot ifname wlp2s0 ssid hmm password "qwerty1234"'
-alias fact='wine ~/Factorio/bin/x64/factorio.exe'
+alias conn='bluetoothctl disconnect' 
+alias di='bluetoothctl disconnect'
+alias factorio='wine ~/Factorio/bin/x64/factorio.exe'
 alias nconf='nn ~/.config/nvim/lua/koneh/plugins-setup.lua'
 alias fkill='pkill -f firefox'
+alias ic='sudo iwconfig'
 alias camkill='sudo rmmod -f uvcvideo'
-alias dis='bluetoothctl disconnect' 
 alias history='history 500 | fzf  +s --tac'
 
 
@@ -100,4 +92,3 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval $(thefuck --alias)
