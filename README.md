@@ -1,2 +1,7 @@
-# dotfiles
-Arch Linux dotfiles and configs
+#### dotfiles
+
+
+
+>[!danger] 
+> kind of a mess right now, will clean up later
+> mainly used for backup 
